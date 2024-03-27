@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%); /* 시작 위치 */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* 최종 위치 */
+    opacity: 1;
+  }
+}
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.menu-line::after {
+  content: "";
+  position: absolute;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e3e3e3;
+}
+
+.whiteBackground {
+  background-color: white;
+  height: 360px;
+  transition: background-color 0.3s ease; /* 배경색 변경 애니메이션 */
+}
+
+.scroll-on {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.headerLogo {
+  padding: 30px 0px;
+  cursor: pointer;
+}
+.headerLogo img {
+  width: 100px;
+}
+
+.main-menu {
+  display: flex;
+  box-sizing: border-box;
+}
+.main-menu :hover {
+  background-color: #fafafa;
+}
+
+.menu-box {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list {
+  width: 175px;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 36px 0 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-list > a::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 50%;
+  top: 94px;
+  height: 2px;
+  background-color: #004294;
+  transition: all 0.3s;
+}
+
+.menu-list:hover a::after {
+  left: 0;
+  top: 94px;
+  width: 100%;
+}
+
+.menu-sub-list {
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 17px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+  margin-top: 80px;
+  border-top: 0;
+  transition: all 0.5s;
+}
+.menu-sub-list li {
+  margin: 0 0 18px 0;
+}
+.menu-sub-list li:hover {
+  color: #02479d;
+}
+
+.menu-list > a {
+  position: absolute;
+  top: 0;
+  padding: 35px;
+  display: block;
+  width: 100%;
+  height: 94px;
+}
+
+.hoverText {
+  color: #000;
+  font-weight: bold;
+}
+
+.hamburger {
+  cursor: pointer;
+  padding: 30px 0px;
+}
+
+.footer-box {
+  background-color: #1c1c1c;
+  height: 280px;
+  color: #949494;
+  padding: 0 100px;
+}
+
+.footer-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-line {
+  border: 0;
+  height: 2px;
+  background: #949494;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-end {
+  display: flex;
+}
+.footer-end div {
+  cursor: pointer;
+}/*# sourceMappingURL=headerFooter.css.map */

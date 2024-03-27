@@ -1,0 +1,291 @@
+//-----------------------------여기부터 회사소개 이미지 + 텍스트
+.sub-menu-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+}
+
+.sub-title {
+  color: #fff;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: -3px;
+}
+
+.sub-content {
+  font-size: 23px;
+  color: white;
+  letter-spacing: -1px;
+  margin-top: 20px;
+}
+
+//-----------------------------여기부터 미니 네브바
+
+.aboutus-mini-nav {
+  width: 100%;
+  height: 110px;
+  // background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-nav-box {
+  list-style: none;
+  width: 100%;
+  height: 110px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: white;
+}
+
+.aboutus-nav-btn {
+  color: #515151;
+  width: 230px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  a {
+    font-size: 20px;
+  }
+}
+
+.aboutus-nav-btn a::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #004294;
+}
+
+// .mini-nav-text-line a::after {
+//   content: "";
+//   // width: 100%;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   height: 2px;
+//   background-color: #004294;
+// }
+
+.aboutus-nav-btn a::after {
+  content: "";
+  display: block;
+  width: 0; /* 초기 너비를 0으로 설정 */
+  height: 2px; /* 밑줄의 높이 설정 */
+  background-color: #004294; /* 밑줄의 색상 설정 */
+  transition: width 0.4s; /* 너비에 대한 전환 설정 */
+}
+
+.aboutus-nav-btn:hover a::after,
+.aboutus-nav-btn:active a::after {
+  // left: 0;
+  // top: 74px;
+  width: 100%;
+}
+
+.aboutus-nav-btn:hover {
+  color: #004294;
+}
+
+//-----------------------------여기부터 파란색바 + 작은 타이틀
+
+.aboutus-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding-bottom: 100px;
+}
+
+.mini-line {
+  margin: 150px 0 30px 0;
+  width: 50px;
+  border-bottom: 5px solid #004294;
+}
+
+.mini-text {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 120px;
+}
+
+//-----------------------------여기부터 회사 개요
+
+.overview-content {
+  position: relative;
+  margin-bottom: 350px;
+}
+
+.left-box {
+  width: 70vw;
+  height: 700px;
+  background-color: #eff2f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  padding-left: 25%;
+  letter-spacing: -1px;
+  div {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 25px;
+    line-height: 50px;
+    margin: 0;
+  }
+}
+
+.right-box {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  height: 650px;
+  width: 44%;
+  background-position: center center;
+  // background-size: cover;
+}
+//-----------------------------여기부터 연혁
+
+.history-box {
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.history-left-box {
+  width: 310px;
+  margin-right: 20px;
+}
+.dividing-line {
+  width: 2px;
+  background-color: #ededed;
+}
+
+.history-right-box {
+  // background-color: yellowgreen;
+  width: 790px;
+  margin-left: 20px;
+}
+
+.year-title {
+  color: #004294;
+  font-weight: bold;
+  font-size: 25px;
+  border-top: 2px solid #004294;
+  padding-top: 10px;
+}
+
+.year-content {
+  border-top: 2px solid #ededed;
+  padding: 10px;
+  // display: flex;
+  // justify-content: space-between;
+  // position: relative;
+}
+
+.month-content {
+  display: flex;
+  margin-bottom: 15px;
+  // background-color: orange;
+  width: 100%;
+  float: left;
+}
+
+.history-month {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  line-height: 42px;
+}
+
+.history-content {
+  color: #000;
+  font-size: 18px;
+  margin: 5px;
+  line-height: 42px;
+}
+
+.faint-year {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  color: #f7f7f7;
+  font-size: 130px;
+  font-weight: bold;
+  z-index: -3;
+  float: right;
+}
+
+//-----------------------------여기부터 업무영역
+.domain-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.domain-title {
+  color: #2f3b55;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.domain-subtitle {
+  color: #8a8a8a;
+  font-size: 16px;
+  letter-spacing: -0.8px;
+}
+
+.domain-content {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+
+.domain-seperate {
+  padding: 20px 50px;
+  text-align: center;
+  // background-color: red;
+  // border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.seperate-second-box {
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+}
+
+.domain-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.domain-box-title {
+  color: #004294;
+  font-size: 24px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.domain-box-content {
+  color: #515151;
+  font-size: 18px;
+  height: 110px;
+}

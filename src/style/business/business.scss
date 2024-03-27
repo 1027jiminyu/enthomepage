@@ -1,0 +1,150 @@
+//-----------------------------여기부터 파란색바 + 작은 타이틀
+.business-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-line {
+  margin: 150px 0 30px 0;
+  width: 50px;
+  border-bottom: 5px solid #004294;
+}
+
+.mini-text {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 120px;
+}
+
+//-----------------------------여기부터 사업 및 개발 방향
+.present-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.present-img {
+  background-image: url("../../../public/images/business_img/present.jpg");
+  width: 1200px;
+  height: 440px;
+}
+
+.present-title {
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  top: -35px;
+  width: 100%;
+  left: 150px;
+}
+
+.present-text {
+  color: #000;
+  font-size: 18px;
+  position: relative;
+  right: -230px;
+  line-height: 38px;
+}
+
+.present-line {
+  width: 1200px;
+  height: 2px;
+  background-color: #ededed;
+  margin: 80px 0;
+}
+
+.vision-box {
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.vision-img {
+  background-image: url("../../../public/images/business_img/vision.jpg");
+  width: 592px;
+  height: 700px;
+}
+
+.vision-text-box {
+  padding: 45px 90px;
+}
+
+.vision-title {
+  font-size: 40px;
+  color: #004294;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.vision-subtitle {
+  font-size: 28px;
+  color: #000;
+  font-weight: bold;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+.vision-content {
+  font-size: 18px;
+  color: #515151;
+  line-height: 38px;
+}
+
+.vision-div-line {
+  width: 520px;
+  height: 2px;
+  background-color: #ededed;
+  margin: 61px 0;
+}
+
+.vision-content1 {
+  line-height: 38px;
+  margin-bottom: 13px;
+}
+
+.vision-content2 {
+  line-height: 38px;
+}
+
+//-----------------------------여기부터 모니터링 개요
+.monitoring-title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.monitoring-img {
+  background-image: url("../../../public/images/business_img/monitoring.jpg");
+  width: 1200px;
+  height: 440px;
+}
+
+// .monitoring-title-text-box {
+//   display: flex;
+//   justify-content: space-around;
+//   // background-color: #515151;
+// }
+
+.monitoring-title {
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  top: -35px;
+  width: 100%;
+  left: 150px;
+  // background-color: olive;
+}
+
+.monitoring-subtitle {
+  color: #000;
+  font-size: 18px;
+  position: relative;
+  top: -85px;
+  right: -230px;
+  line-height: 38px;
+}

@@ -1,0 +1,96 @@
+.device-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-line {
+  margin: 150px 0 30px 0;
+  width: 50px;
+  border-bottom: 5px solid #004294;
+}
+
+.mini-text {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 120px;
+}
+
+.function-img {
+  background-image: url("../../../public/images/device_img/introfunc.jpg");
+  width: 1200px;
+  height: 440px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 120px;
+}
+.function-img img {
+  position: relative;
+  top: -60px;
+  margin: 0 50px;
+}
+
+.func-dev-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.device-introfunc {
+  color: #000;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  width: 1200px;
+}
+
+.func-dev-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device_img {
+  margin: 0 10px 10px 10px;
+}
+
+.device_value_img {
+  margin: 0 10px 10px 10px;
+}
+
+.func_div-line {
+  width: 1180px;
+  height: 1px;
+  background-color: #e3e3e3;
+  margin: 100px 0;
+}
+
+.function-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 150px 0;
+}
+
+.function-text {
+  color: #000;
+  font-size: 27px;
+  font-weight: bold;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  border-left: 5px solid #004294;
+  border-right: 5px solid #004294;
+  padding: 18px 10px;
+  width: 1180px;
+  text-align: center;
+  margin: 20px 0;
+}/*# sourceMappingURL=device.css.map */

@@ -1,0 +1,57 @@
+/* ====== 이미지 ====== */
+.labeling_img { width: 110px; height: 120px;}
+
+.content_img { width: 35px; height: 40px; vertical-align: middle; }
+
+/* ====== 라벨링 ====== */
+@media screen and (max-width: 899px) { .labeling { display:none; } }
+
+.labeling > div { position: relative; border: 1px solid #000; display: flex; justify-content: space-between; margin:auto; max-width: 950px; padding: 40px 60px 30px 60px; }
+
+.labeling_table { border-collapse : collapse; width: 100%; height: 100%; background-color: #fff; }
+
+.labeling_table_box { text-align: left; width: 17%; border: 1px solid #000; }
+
+.labeling_table_text { display: flex; justify-content: space-between; border: 1px solid rgba(22,71,170,0.2); border-radius: 5px; padding: 10px; margin: 10px; }
+
+#image1Text { position: absolute; left: 18%; top: 30px; display: none; width: 45%; }
+
+#image2Text { position: absolute; left: 57%; top: 30px; display: none; width: 45%; }
+
+#image3Text { position: absolute; right: 18%; top: 30px; display: none; width: 50%; }
+
+/* ====== 목차 ====== */
+.index { border: 1px solid #000; margin: auto; max-width: 1000px; padding: 20px 30px; }
+
+.index > div { display: flex; justify-content: space-between; width: 100%; }
+
+.index > div > p { width: 75%; }
+
+.index > div > p:first-child { width: 100%; margin-right: 30px; }
+
+.index > div > p > a { text-decoration: none; color: inherit; }
+
+/* ====== 컨텐츠 ====== */
+p { line-height: 1.6; }
+
+h3 { text-align: center; }
+
+body > div { margin-top: 100px; }
+
+ul { list-style-type: none; padding: 15px 0px 0px 35px; }
+
+li { margin-bottom: 15px; text-indent: -20px; line-height: 1.6; }
+
+li > span { display: inline-block; padding: 0px 8px; border-radius: 50%; background-color: #E5ECF8; color: #1C5CB0; text-indent: 0; margin: 0px 5px 5px -15px }
+
+button { padding: 10px; background-color: #1D5DB0; border: 0; cursor: pointer; color: #fff; }
+
+.policy_title { background-color: #F0F3F8; max-width: 1050px; margin:auto; padding: 10px 30px; }
+
+.content_table { border-collapse : collapse; width: 100%; height: 100%; }
+
+.content_table_box { text-align: center; border: 1px solid #000; }
+
+#ServiceList { margin-top: 30px; height: 150px; display: none; }
+
+#cont1 > div, #cont2 > div, #cont3 > div, #cont4 > div, #cont5 > div, #cont6 > div, #cont7 > div, #cont8 > div { margin:auto; max-width: 1050px; }
