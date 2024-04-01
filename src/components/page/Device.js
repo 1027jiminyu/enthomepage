@@ -39,16 +39,16 @@ const Product = () => {
               navigate("/device/process");
             }}
           >
-            <a>프로세스</a>
+            <a>프로세스 / 동작 순서</a>
           </li>
-          <li
+          {/* <li
             className={`aboutus-nav-btn `}
             onClick={() => {
               navigate("/device/sequence");
             }}
           >
             <a>동작 순서</a>
-          </li>
+          </li> */}
           <li
             className={`aboutus-nav-btn `}
             onClick={() => {

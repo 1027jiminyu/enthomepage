@@ -19,7 +19,6 @@ import Algorithm from "./components/business/Algorithm";
 import Research from "./components/business/Research";
 import Function from "./components/device/Function";
 import Process from "./components/device/Process";
-import Sequence from "./components/device/Sequence";
 import LED from "./components/device/LED";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -50,7 +49,6 @@ const App = () => {
               <Route index element={<Function />} />
               <Route path="function" element={<Function />} />
               <Route path="process" element={<Process />} />
-              <Route path="sequence" element={<Sequence />} />
               <Route path="led" element={<LED />} />
             </Route>
             <Route path="/contractor" element={<Contractor />} />

@@ -35,7 +35,7 @@
 .present-title {
   color: #000;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 800;
   position: relative;
   top: -35px;
   width: 100%;
@@ -44,7 +44,7 @@
 
 .present-text {
   color: #000;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
   right: -230px;
   line-height: 38px;
@@ -54,7 +54,7 @@
   width: 1200px;
   height: 2px;
   background-color: #ededed;
-  margin: 80px 0;
+  margin: 110px 0;
 }
 
 .vision-box {
@@ -88,7 +88,7 @@
 }
 
 .vision-content {
-  font-size: 18px;
+  font-size: 20px;
   color: #515151;
   line-height: 38px;
 }
@@ -97,7 +97,7 @@
   width: 520px;
   height: 2px;
   background-color: #ededed;
-  margin: 61px 0;
+  margin: 60px 0;
 }
 
 .vision-content1 {
@@ -114,6 +114,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  // justify-content: center;
   position: relative;
 }
 
@@ -132,7 +133,7 @@
 .monitoring-title {
   color: #000;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 800;
   position: relative;
   top: -35px;
   width: 100%;
@@ -142,9 +143,79 @@
 
 .monitoring-subtitle {
   color: #000;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
   top: -85px;
   right: -230px;
   line-height: 38px;
+}
+
+.monitoring1-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  > img {
+    width: 1200px;
+    height: 467px;
+  }
+}
+
+.cause-matter {
+  display: flex;
+  margin-top: 35px;
+  width: 1200px;
+}
+
+.cause-matter-left {
+  background-color: #f3f3f3;
+  color: #000;
+  font-size: 25px;
+  border-left: 5px solid #004294;
+  line-height: 45px;
+  width: 415px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+.cause-matter-right {
+  background-color: #fff;
+  color: #000;
+  font-size: 25px;
+  border-right: 5px solid #004294;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  line-height: 45px;
+  width: 785px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.div-line {
+  margin: 110px 0;
+  width: 1200px;
+  height: 1px;
+  background-color: #e3e3e3;
+}
+
+.monitoring3-box {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+  padding: 110px 0 150px 0;
+  > div {
+    width: 1200px;
+    font-size: 26px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  > img {
+    width: 1200px;
+  }
 }

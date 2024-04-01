@@ -2,7 +2,7 @@ import React from "react";
 
 const Vision = () => {
   return (
-    <div className="container">
+    <div className="d-flex flex-column align-items-center">
       <div className="business-content-box">
         <div className="mini-line" />
         <div className="mini-text">사업 및 개발 방향</div>

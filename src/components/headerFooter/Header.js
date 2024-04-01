@@ -141,15 +141,15 @@ function Header() {
                   navigate("/device/process");
                 }}
               >
-                프로세스
+                프로세스 / 동작 순서
               </li>
-              <li
+              {/* <li
                 onClick={() => {
                   navigate("/device/sequence");
                 }}
               >
                 동작 순서
-              </li>
+              </li> */}
               <li
                 onClick={() => {
                   navigate("/device/led");

@@ -20,7 +20,7 @@
   margin-bottom: 120px;
 }
 
-//-----------------------------여기부터 파란색바 + 작은 타이틀
+//-----------------------------여기부터 소개/기능
 .function-img {
   background-image: url("../../../public/images/device_img/introfunc.jpg");
   width: 1200px;
@@ -90,12 +90,340 @@
   color: #000;
   font-size: 27px;
   font-weight: bold;
-  border-top: 1px solid #e3e3e3;
-  border-bottom: 1px solid #e3e3e3;
+  background-color: #fff;
   border-left: 5px solid #004294;
   border-right: 5px solid #004294;
   padding: 18px 10px;
   width: 1180px;
   text-align: center;
-  margin: 20px 0;
+  margin: 25px 0;
+}
+
+//-----------------------------여기부터 프로세스/동작순서
+.process-img {
+  background-image: url("../../../public/images/device_img/process.jpg");
+  width: 1200px;
+  height: 440px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 120px;
+  img {
+    position: relative;
+    top: -60px;
+    margin: 0 50px;
+  }
+}
+
+.process-box {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 0;
+  position: relative;
+}
+
+.process-text {
+  color: #000;
+  font-size: 26px;
+  width: 1200px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.process-img-box {
+  border: 3px solid #e3e3e3;
+  width: 1200px;
+  height: 1080px;
+}
+
+.arrow1 {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 241px;
+    left: 77px;
+  }
+}
+.equipment {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 60px;
+    left: 143px;
+  }
+}
+.farm {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 526px;
+    left: 140px;
+  }
+}
+.gateway {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 63px;
+    right: 191px;
+  }
+}
+.cloud {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 238px;
+    right: 173px;
+  }
+}
+.arrow2 {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 411px;
+    right: 263px;
+  }
+}
+.arrow3 {
+  position: relative;
+  > img {
+    position: absolute;
+    left: 558px;
+    top: 615px;
+  }
+}
+.moni {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 526px;
+    right: 77px;
+  }
+}
+.arrow4 {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 728px;
+    right: 297px;
+  }
+}
+.manager {
+  position: relative;
+  > img {
+    position: absolute;
+    top: 841px;
+    right: 77px;
+  }
+}
+
+.sequence-box {
+  padding: 110px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sequence-text {
+  color: #000;
+  font-size: 26px;
+  width: 1200px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sequence1 {
+  display: flex;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  > div:nth-child(1) {
+    background-color: #595656;
+    width: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  > div:nth-child(2) {
+    background-color: #949595;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  > div:nth-child(3) {
+    background-color: #e6e6e7;
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.sequence2 {
+  display: flex;
+  height: 50px;
+  color: #010101;
+  font-size: 25px;
+  margin-top: 30px;
+  > div:nth-child(1) {
+    width: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  > div:nth-child(2) {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  > div:nth-child(3) {
+    width: 199px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  > div:nth-child(4) {
+    width: 578px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.sequence6 {
+  display: flex;
+  height: 25px;
+  margin-bottom: 30px;
+  > div:nth-child(1) {
+    width: 224px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    > div {
+      width: 224px;
+      height: 12.5px;
+      border-bottom: 1px solid #000;
+    }
+  }
+  > div:nth-child(2) {
+    width: 200px;
+    border-right: 1px solid #000;
+    > div {
+      width: 200px;
+      height: 12.5px;
+      border-bottom: 1px solid #000;
+    }
+  }
+  > div:nth-child(3) {
+    width: 200px;
+    border-right: 1px solid #000;
+    > div {
+      width: 200px;
+      height: 12.5px;
+      border-bottom: 1px solid #000;
+    }
+  }
+  > div:nth-child(4) {
+    width: 580px;
+    border-right: 1px solid #000;
+    > div {
+      width: 580px;
+      height: 12.5px;
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+
+.sequence3 {
+  display: flex;
+  height: 100px;
+  font-size: 30px;
+  color: #010101;
+  > div:nth-child(1) {
+    background-color: #cbd5dc;
+    width: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  > div:nth-child(2) {
+    background-color: #6f94cd;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  > div:nth-child(3) {
+    background-color: #567eb4;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  > div:nth-child(4) {
+    background-color: #d3def1;
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.sequence4 {
+  position: relative;
+  right: -315px;
+  margin: 10px 0;
+}
+
+.sequence5 {
+  display: flex;
+  height: 100px;
+  font-size: 30px;
+  color: #010101;
+  > div:nth-child(1) {
+    background-color: #fff;
+    width: 224px;
+    border-bottom: 20px solid #595656;
+  }
+  > div:nth-child(2) {
+    background-color: #6f94cd;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-bottom: 20px solid #949595;
+  }
+  > div:nth-child(3) {
+    background-color: #567eb4;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-bottom: 20px solid #949595;
+  }
+  > div:nth-child(4) {
+    background-color: #d3def1;
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 20px solid #e6e6e7;
+  }
+}
+
+.sequence-text {
+  color: #010101;
+  font-size: 25px;
+  margin-top: 40px;
 }

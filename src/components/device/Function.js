@@ -19,7 +19,7 @@ const DeviceFunc = () => {
             <br />
             공동개발하였으며 각종 정보를 수집하며 악취 기여율을 구축하여
             <br />
-            새로운 물질 센서 개발을 하였습니다
+            새로운 물질 센서 개발을 하였습니다.
           </div>
           <img src="/images/device_img/quotationright.png" />
         </div>
