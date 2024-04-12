@@ -94,7 +94,7 @@ const DeviceFunc = () => {
             className="function-text up-slow2 up-animation"
             style={{ marginTop: 0 }}
           >
-            황화수소, 암모니아, 온도,습도, 풍속, 풍습, 풍향 측정
+            황화수소, 암모니아, 온도, 습도, 풍속, 풍습, 풍향 측정
           </div>
           <div className="function-text up-slow2 up-animation">
             유·무선 통신 제어

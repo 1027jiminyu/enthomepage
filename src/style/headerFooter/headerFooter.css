@@ -133,7 +133,7 @@
 
 .footer-box {
   background-color: #1c1c1c;
-  height: 280px;
+  height: 320px;
   color: #949494;
   padding: 0 100px;
 }
@@ -163,13 +163,18 @@
   cursor: pointer;
 }
 
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.93);
   z-index: 10;
   overflow: hidden;
 }
@@ -183,6 +188,7 @@
 }
 
 .box {
+  width: 145px;
   height: 450px;
 }
 
@@ -193,12 +199,12 @@
   left: 0;
   bottom: 0;
   height: 2px;
-  background-color: #004294; /* 초기 상태의 색상 */
-  transition: width 0.4s, background-color 0.4s; /* 너비와 색상에 대한 전환 설정 */
+  background-color: #005aca; /* 초기 상태의 색상 */
+  transition: width 0.5s, background-color 0.5s; /* 너비와 색상에 대한 전환 설정 */
 }
 
 .box:hover .nav-list a:hover::after {
-  background-color: #004294; /* 호버 시에 변경될 색상 */
+  background-color: #005aca; /* 호버 시에 변경될 색상 */
 }
 
 .nav-list {

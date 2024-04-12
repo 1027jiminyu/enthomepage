@@ -191,7 +191,7 @@ function Header() {
           />
         )}
       </div>
-      {isClicked && <WideNav />}
+      {isClicked && <WideNav setIsClicked={setIsClicked} />}
     </div>
   );
 }
