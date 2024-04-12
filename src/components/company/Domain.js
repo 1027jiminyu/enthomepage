@@ -1,30 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Work() {
-  const handleScrollOnce = () => {
-    const scrollPosition = window.scrollY;
+  useEffect(() => {
+    const domains = gsap.utils.toArray(".domain");
+    domains.forEach((domain) => {
+      const anim = gsap.to(domain, {
+        y: -100,
+        paused: true,
+        opacity: 1,
+        duration: 1.2,
+      });
 
-    if (scrollPosition >= 300) {
-      gsap.fromTo(
-        ".domain-text",
-        { y: 250, opacity: 0 },
-        { duration: 1, y: 0, opacity: 1 }
-      );
-      gsap.fromTo(
-        ".domain-content",
-        { y: 400, opacity: 0 },
-        { duration: 1.3, y: 0, opacity: 1 }
-      );
-      document
-        .querySelectorAll(".domain-text,.domain-content")
-        .forEach((element) => {
-          element.style.visibility = "visible";
-        });
-      window.removeEventListener("scroll", handleScrollOnce);
-    }
-  };
-  window.addEventListener("scroll", handleScrollOnce);
+      ScrollTrigger.create({
+        trigger: domain,
+        start: "center 90%",
+        onEnter: () => anim.play(),
+      });
+    });
+  }, []);
+
   return (
     <div>
       <div className="aboutus-content-box">
@@ -32,7 +28,7 @@ export default function Work() {
         <div className="mini-text">업무 영역</div>
       </div>
       <div className="domain-box">
-        <div className="domain-text" style={{ visibility: "hidden" }}>
+        <div className="domain-text domain">
           <div className="domain-title">
             축산악취 물질 측정 및 모니터링
             <br />
@@ -42,7 +38,7 @@ export default function Work() {
             축산 환경이 필요로 하는 든든한 파트너 (주) 이엔티를 소개합니다.
           </div>
         </div>
-        <div className="domain-content" style={{ visibility: "hidden" }}>
+        <div className="domain-content domain">
           <div className="domain-seperate">
             <div className="domain-img-box" style={{ paddingBottom: "10px" }}>
               <img src="/images/aboutus_img/icon1.png" />

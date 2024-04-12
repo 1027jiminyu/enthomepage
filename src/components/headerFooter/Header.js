@@ -2,11 +2,18 @@ import React, { useState, useEffect } from "react";
 import "../../style/headerFooter/headerFooter.css";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineMenu, MdClose } from "react-icons/md";
+import WideNav from "./WideNav";
 
 function Header() {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isClicked, setIsClicked] = useState(false); // 클릭 여부를 추적하는 상태 추가
+
+  // 버튼 클릭 시 상태 변경 함수
+  const hamburgerClick = () => {
+    setIsClicked(!isClicked);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +61,7 @@ function Header() {
               style={{ display: isHovered ? "block" : "none" }}
             >
               <li
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "40px" }}
                 onClick={() => navigate("/about-us/overview")}
               >
                 회사 개요
@@ -79,7 +86,7 @@ function Header() {
               style={{ display: isHovered ? "block" : "none" }}
             >
               <li
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "40px" }}
                 onClick={() => {
                   navigate("/business/vision");
                 }}
@@ -123,13 +130,13 @@ function Header() {
               isHovered || isScrolled ? "hoverText" : ""
             } `}
           >
-            <a onClick={() => navigate("/device")}>장비 소개</a>
+            <a onClick={() => navigate("/device")}>장비 정보</a>
             <ul
               className="menu-sub-list"
               style={{ display: isHovered ? "block" : "none" }}
             >
               <li
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "40px" }}
                 onClick={() => {
                   navigate("/device/function");
                 }}
@@ -141,15 +148,8 @@ function Header() {
                   navigate("/device/process");
                 }}
               >
-                프로세스 / 동작 순서
+                프로세스 / 동작순서
               </li>
-              {/* <li
-                onClick={() => {
-                  navigate("/device/sequence");
-                }}
-              >
-                동작 순서
-              </li> */}
               <li
                 onClick={() => {
                   navigate("/device/led");
@@ -172,7 +172,7 @@ function Header() {
               style={{ display: isHovered ? "block" : "none" }}
             >
               <li
-                style={{ paddingTop: "10px" }}
+                style={{ paddingTop: "40px" }}
                 onClick={() => navigate("/contractor")}
               >
                 주요 협력업체
@@ -181,12 +181,17 @@ function Header() {
           </li>
         </ul>
       </div>
-      <div className="hamburger">
-        <MdOutlineMenu
-          color={`${isHovered || isScrolled ? "#000" : "#fff"}`}
-          size={35}
-        />
+      <div className="hamburger" onClick={hamburgerClick}>
+        {isClicked ? (
+          <MdClose color="#fff" size={35} />
+        ) : (
+          <MdOutlineMenu
+            color={`${isHovered || isScrolled ? "#000" : "#fff"}`}
+            size={35}
+          />
+        )}
       </div>
+      {isClicked && <WideNav />}
     </div>
   );
 }

@@ -5,9 +5,14 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   let navigate = useNavigate();
 
-  const ss = () => {
+  const privacy = () => {
     // setIsActive(true);
     window.open("/privacy_policy.html", "_blank");
+  };
+
+  const email = () => {
+    // setIsActive(true);
+    window.open("/email.html", "_blank");
   };
 
   return (
@@ -30,10 +35,10 @@ const Footer = () => {
             COPYRIGHTⓒ 2024 ENT Co., Ltd. ALL RIGHTS RESERVED.
           </div>
           <div className="footer-end">
-            <div style={{ color: "#fff" }} onClick={ss}>
+            <div style={{ color: "#fff" }} onClick={privacy}>
               개인정보처리방침
             </div>
-            <div style={{ marginLeft: 20 }} onClick={() => {}}>
+            <div style={{ marginLeft: 20 }} onClick={email}>
               이메일무단수집거부
             </div>
           </div>

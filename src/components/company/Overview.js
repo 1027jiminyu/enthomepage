@@ -1,38 +1,75 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Overview() {
-  function handleScrollOnce() {
-    // 현재 스크롤 위치
-    const scrollPosition = window.scrollY;
-
-    // 특정 스크롤 위치에 도달했을 때 애니메이션 실행
-    if (scrollPosition >= 300) {
-      // 예: 500px 스크롤 시
-      gsap.fromTo(
-        ".left-box",
-        { y: 300, opacity: 0 },
-        { duration: 1, y: 0, opacity: 1 }
-      );
-
-      gsap.fromTo(
-        ".right-box",
-        { y: 350, opacity: 0 },
-        { duration: 1.5, y: 0, opacity: 1 }
-      );
-
-      // 애니메이션이 실행되었으므로 요소를 보이도록 변경
-      document.querySelectorAll(".left-box, .right-box").forEach((element) => {
-        element.style.display = "flex";
+  useEffect(() => {
+    const overviews = gsap.utils.toArray(".overview");
+    overviews.forEach((overview) => {
+      const anim = gsap.to(overview, {
+        y: -100,
+        paused: true,
+        opacity: 1,
+        duration: 1.4,
+        delay: 0,
       });
 
-      // 스크롤 이벤트 리스너 제거
-      window.removeEventListener("scroll", handleScrollOnce);
-    }
-  }
+      ScrollTrigger.create({
+        trigger: overview,
+        start: "center 92%",
+        onEnter: () => anim.play(),
+      });
+    });
 
-  // 스크롤 이벤트 리스너 등록
-  window.addEventListener("scroll", handleScrollOnce);
+    const overviews2 = gsap.utils.toArray(".overview2");
+    overviews2.forEach((overview2) => {
+      const anim = gsap.to(overview2, {
+        y: -100,
+        paused: true,
+        opacity: 1,
+        duration: 1.7,
+        delay: 0,
+      });
+
+      ScrollTrigger.create({
+        trigger: overview2,
+        start: "center 99%",
+        onEnter: () => anim.play(),
+      });
+    });
+  }, []);
+  // function handleScrollOnce() {
+  //   // 현재 스크롤 위치
+  //   const scrollPosition = window.scrollY;
+
+  //   // 특정 스크롤 위치에 도달했을 때 애니메이션 실행
+  //   if (scrollPosition >= 300) {
+  //     // 예: 500px 스크롤 시
+  //     gsap.fromTo(
+  //       ".left-box",
+  //       { y: 250, opacity: 0 },
+  //       { duration: 1.5, y: 0, opacity: 1 }
+  //     );
+
+  //     gsap.fromTo(
+  //       ".right-box",
+  //       { y: 350, opacity: 0 },
+  //       { duration: 2, y: 0, opacity: 1 }
+  //     );
+
+  //     // 애니메이션이 실행되었으므로 요소를 보이도록 변경
+  //     document.querySelectorAll(".left-box, .right-box").forEach((element) => {
+  //       element.style.display = "flex";
+  //     });
+
+  //     // 스크롤 이벤트 리스너 제거
+  //     window.removeEventListener("scroll", handleScrollOnce);
+  //   }
+  // }
+
+  // // 스크롤 이벤트 리스너 등록
+  // window.addEventListener("scroll", handleScrollOnce);
+
   return (
     <div>
       <div className="aboutus-content-box">
@@ -42,7 +79,7 @@ export default function Overview() {
         </div>
       </div>
       <div className="overview-content">
-        <div className="left-box" style={{ display: "none" }}>
+        <div className="left-box overview">
           <div>항상 새로운 시장을 개척해가는 ENT</div>
           <br />
           <p>
@@ -63,10 +100,9 @@ export default function Overview() {
           </p>
         </div>
         <img
-          className="right-box"
+          className="right-box overview2"
           src="/images/aboutus_img/aboutus_overview.jpg"
           alt=""
-          style={{ display: "none" }}
         />
       </div>
     </div>

@@ -9,7 +9,7 @@ export default function Organization() {
       gsap.fromTo(
         ".organization-img",
         { y: 250, opacity: 0 },
-        { duration: 1, y: 0, opacity: 1 }
+        { duration: 1.5, y: 0, opacity: 1 }
       );
       document.querySelectorAll(".organization-img").forEach((element) => {
         element.style.visibility = "visible";

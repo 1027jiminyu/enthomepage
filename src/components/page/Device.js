@@ -14,7 +14,7 @@ const Product = () => {
           backgroundImage: `url(${process.env.PUBLIC_URL}/images/device_img/deviceTitle.jpg)`,
         }}
       >
-        <div className="sub-title">장비 소개</div>
+        <div className="sub-title">장비 정보</div>
         <div className="sub-content">
           축산업과 함께하는 (주)이엔티를 소개합니다.
         </div>
@@ -39,7 +39,7 @@ const Product = () => {
               navigate("/device/process");
             }}
           >
-            <a>프로세스 / 동작 순서</a>
+            <a>프로세스 / 동작순서</a>
           </li>
           {/* <li
             className={`aboutus-nav-btn `}
@@ -47,7 +47,7 @@ const Product = () => {
               navigate("/device/sequence");
             }}
           >
-            <a>동작 순서</a>
+            <a>동작순서</a>
           </li> */}
           <li
             className={`aboutus-nav-btn `}

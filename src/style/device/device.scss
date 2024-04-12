@@ -32,7 +32,7 @@
   font-size: 24px;
   text-align: center;
   line-height: 50px;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
   img {
     position: relative;
     top: -60px;
@@ -50,17 +50,16 @@
 
 .device-introfunc {
   color: #000;
-  font-size: 26px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 40px;
   width: 1200px;
 }
 
-.func-dev-text {
+.func-dev-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: rebeccapurple;
 }
 
 .device_img {
@@ -69,13 +68,6 @@
 
 .device_value_img {
   margin: 0 10px 10px 10px;
-}
-
-.func_div-line {
-  width: 1180px;
-  height: 1px;
-  background-color: #e3e3e3;
-  margin: 100px 0;
 }
 
 .function-box {
@@ -111,7 +103,7 @@
   font-size: 24px;
   text-align: center;
   line-height: 50px;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
   img {
     position: relative;
     top: -60px;
@@ -124,13 +116,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 110px 0;
+  padding: 150px 0;
   position: relative;
 }
 
 .process-text {
   color: #000;
-  font-size: 26px;
+  font-size: 25px;
   width: 1200px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -140,91 +132,62 @@
   border: 3px solid #e3e3e3;
   width: 1200px;
   height: 1080px;
+  position: relative;
 }
 
 .arrow1 {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 241px;
-    left: 77px;
-  }
+  position: absolute;
+  top: 241px;
+  left: 77px;
 }
 .equipment {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 60px;
-    left: 143px;
-  }
+  position: absolute;
+  top: 60px;
+  left: 143px;
 }
 .farm {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 526px;
-    left: 140px;
-  }
+  position: absolute;
+  top: 526px;
+  left: 140px;
 }
 .gateway {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 63px;
-    right: 191px;
-  }
+  position: absolute;
+  top: 63px;
+  right: 191px;
 }
 .cloud {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 238px;
-    right: 173px;
-  }
+  position: absolute;
+  top: 238px;
+  right: 173px;
 }
 .arrow2 {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 411px;
-    right: 263px;
-  }
+  position: absolute;
+  top: 411px;
+  right: 263px;
 }
 .arrow3 {
-  position: relative;
-  > img {
-    position: absolute;
-    left: 558px;
-    top: 615px;
-  }
+  position: absolute;
+  left: 558px;
+  top: 615px;
 }
 .moni {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 526px;
-    right: 77px;
-  }
+  position: absolute;
+  top: 526px;
+  right: 77px;
 }
 .arrow4 {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 728px;
-    right: 297px;
-  }
+  position: absolute;
+  top: 728px;
+  right: 297px;
 }
 .manager {
-  position: relative;
-  > img {
-    position: absolute;
-    top: 841px;
-    right: 77px;
-  }
+  position: absolute;
+  top: 841px;
+  right: 77px;
 }
 
 .sequence-box {
-  padding: 110px 0;
+  padding: 150px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,7 +195,7 @@
 
 .sequence-text {
   color: #000;
-  font-size: 26px;
+  font-size: 25px;
   width: 1200px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -386,7 +349,7 @@
 
 .sequence5 {
   display: flex;
-  height: 100px;
+  height: 120px;
   font-size: 30px;
   color: #010101;
   > div:nth-child(1) {
@@ -422,8 +385,116 @@
   }
 }
 
-.sequence-text {
+.sequence-bottom-text {
+  font-size: 23px;
   color: #010101;
-  font-size: 25px;
   margin-top: 40px;
+}
+//-----------------------------여기부터 LED
+.led-img {
+  background-image: url("../../../public/images/device_img/led.jpg");
+  width: 1200px;
+  height: 440px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 150px;
+  img {
+    position: relative;
+    top: -60px;
+    margin: 0 50px;
+  }
+}
+
+.led1 {
+  margin-bottom: 150px;
+}
+
+.led-title {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.led2 {
+  padding: 150px 0;
+  background-color: #f8f8f8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bad-box {
+  display: flex;
+  margin-bottom: 125px;
+  // background-color: #567eb4;
+  img {
+    width: 745px;
+  }
+}
+
+.normal-box {
+  display: flex;
+  margin-bottom: 125px;
+  // background-color: #567eb4;
+  img {
+    width: 745px;
+  }
+}
+
+.good-box {
+  display: flex;
+  margin-bottom: 125px;
+  // background-color: #567eb4;
+  img {
+    width: 745px;
+  }
+}
+
+.verygood-box {
+  display: flex;
+  // background-color: #567eb4;
+  img {
+    width: 745px;
+  }
+}
+
+.legend-text-box1,
+.legend-text-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 451px;
+}
+
+.legend-text-box1 {
+  padding: 0 0 0 60px;
+}
+
+.legend-text-box2 {
+  padding: 0 60px 0 0;
+}
+
+.legend-title {
+  color: #010101;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 55px;
+}
+
+.legned-content {
+  color: #000;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.appearProcess,
+.fastAppear {
+  opacity: 0;
 }

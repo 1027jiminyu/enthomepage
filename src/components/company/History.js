@@ -1,75 +1,28 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function History() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const years = gsap.utils.toArray(".year");
+    years.forEach((year) => {
+      const anim = gsap.to(year, {
+        y: -100,
+        paused: true,
+        opacity: 1,
+        duration: 1.2,
+      });
+
+      ScrollTrigger.create({
+        trigger: year,
+        start: "center 85%",
+        onEnter: () => anim.play(),
+      });
+    });
   }, []);
-  const handleScroll2023 = () => {
-    const scrollPosition = window.scrollY;
 
-    if (scrollPosition >= 270 && scrollPosition < 320) {
-      gsap.fromTo(
-        ".year2023",
-        { y: 300, opacity: 0 },
-        { duration: 1.5, y: 0, opacity: 1 }
-      );
-      document.querySelectorAll(".year2023").forEach((element) => {
-        element.style.visibility = "visible";
-      });
-      window.removeEventListener("scroll", handleScroll2023);
-    }
-  };
-  const handleScroll2022 = () => {
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition >= 480 && scrollPosition < 630) {
-      gsap.fromTo(
-        ".year2022",
-        { y: 300, opacity: 0 },
-        { duration: 1.5, y: 0, opacity: 1 }
-      );
-      document.querySelectorAll(".year2022").forEach((element) => {
-        element.style.visibility = "visible";
-      });
-      window.removeEventListener("scroll", handleScroll2022);
-    }
-  };
-  const handleScroll2021 = () => {
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition >= 750 && scrollPosition < 900) {
-      gsap.fromTo(
-        ".year2021",
-        { y: 300, opacity: 0 },
-        { duration: 1.5, y: 0, opacity: 1 }
-      );
-      document.querySelectorAll(".year2021").forEach((element) => {
-        element.style.visibility = "visible";
-      });
-      window.removeEventListener("scroll", handleScroll2021);
-    }
-  };
-  const handleScroll2020 = () => {
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition >= 1200) {
-      gsap.fromTo(
-        ".year2020",
-        { y: 300, opacity: 0 },
-        { duration: 1.5, y: 0, opacity: 1 }
-      );
-      document.querySelectorAll(".year2020").forEach((element) => {
-        element.style.visibility = "visible";
-      });
-      window.removeEventListener("scroll", handleScroll2020);
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll2023);
-  window.addEventListener("scroll", handleScroll2022);
-  window.addEventListener("scroll", handleScroll2021);
-  window.addEventListener("scroll", handleScroll2020);
   return (
     <div>
       <div className="aboutus-content-box">
@@ -78,29 +31,19 @@ export default function History() {
       </div>
       <div className="history-box d-flex justify-content-center">
         <div className="history-left-box">
-          <div
-            className="year-title year2023"
-            style={{ height: "200px", visibility: "hidden" }}
-          >
+          <div className="year-title year" style={{ height: "200px" }}>
             2023
           </div>
-          <div
-            className="year-title year2022"
-            style={{ height: "200px", visibility: "hidden" }}
-          >
+          <div className="year-title year" style={{ height: "200px" }}>
             2022
           </div>
-          <div
-            className="year-title year2021"
-            style={{ height: "580px", visibility: "hidden" }}
-          >
+          <div className="year-title year" style={{ height: "580px" }}>
             2021
           </div>
           <div
-            className="year-title year2020"
+            className="year-title year"
             style={{
               height: "630px",
-              visibility: "hidden",
               borderBottom: "2px solid #004294",
             }}
           >
@@ -109,10 +52,7 @@ export default function History() {
         </div>
         <div className="dividing-line" />
         <div className="history-right-box">
-          <div
-            className="year-content year2023"
-            style={{ height: "200px", visibility: "hidden" }}
-          >
+          <div className="year-content year" style={{ height: "200px" }}>
             <div>
               <div className="month-content">
                 <div className="history-month">06</div>
@@ -123,10 +63,7 @@ export default function History() {
             </div>
             <div className="faint-year">2023</div>
           </div>
-          <div
-            className="year-content year2022"
-            style={{ height: "200px", visibility: "hidden" }}
-          >
+          <div className="year-content year" style={{ height: "200px" }}>
             <div>
               <div className="month-content">
                 <div className="history-month">12</div>
@@ -144,10 +81,7 @@ export default function History() {
             </div>
             <div className="faint-year">2022</div>
           </div>
-          <div
-            className="year-content year2021"
-            style={{ height: "580px", visibility: "hidden" }}
-          >
+          <div className="year-content year" style={{ height: "580px" }}>
             <div>
               <div className="month-content">
                 <div className="history-month">10</div>
@@ -188,10 +122,9 @@ export default function History() {
             <div className="faint-year">2021</div>
           </div>
           <div
-            className="year-content year2020"
+            className="year-content year"
             style={{
               height: "630px",
-              visibility: "hidden",
               borderBottom: "2px solid #ededed",
             }}
           >

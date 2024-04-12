@@ -52,7 +52,7 @@ const Contractor = () => {
                       한국생명공학연구원
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/kribb.png"
                       alt="한국생명공학연구원"
@@ -65,7 +65,7 @@ const Contractor = () => {
                       (재)스마트팜연구개발사업단
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/kosfarm.png"
                       alt="스마트팜연구개발사업단"
@@ -83,7 +83,7 @@ const Contractor = () => {
                       국립축산과학원
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/nias.png"
                       alt="국립축산과학원"
@@ -99,7 +99,7 @@ const Contractor = () => {
                       농촌진흥청
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/rda.png"
                       alt="농촌진흥청"
@@ -114,7 +114,7 @@ const Contractor = () => {
                       서울대학교 농업생명과학대학
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/cals.png"
                       alt="서울대학교 농업생명과학대학"
@@ -127,7 +127,7 @@ const Contractor = () => {
                       성균관대학교 산학협력단
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/skku.png"
                       alt="성균관대학교 산학협력단"
@@ -145,7 +145,7 @@ const Contractor = () => {
                       국립군산대학교 산학협력단
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/ksnu.png"
                       alt="국립군산대학교 산학협력단"
@@ -161,7 +161,7 @@ const Contractor = () => {
                       농협경제지주
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/nh.png"
                       alt="농협경제지주"
@@ -176,7 +176,7 @@ const Contractor = () => {
                       축산환경관리원
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img
                       src="/images/contractor_img/lemi.png"
                       alt="축산환경관리원"
@@ -189,7 +189,7 @@ const Contractor = () => {
                       (주)베가스
                     </div>
                   </Link>
-                  <div class="div-container">
+                  <div className="div-container">
                     <img src="/images/contractor_img/begas.png" alt="베가스" />
                   </div>
                 </td>
