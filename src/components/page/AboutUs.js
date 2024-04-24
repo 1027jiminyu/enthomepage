@@ -8,12 +8,7 @@ export default function AboutUs() {
 
   return (
     <div>
-      <div
-        className="sub-menu-box"
-        style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/aboutus_img/aboutusTitle.jpg)`,
-        }}
-      >
+      <div className="sub-menu-box">
         <div className="sub-title">회사 소개</div>
         <div className="sub-content">
           고객과 함께 발전하는 (주)이엔티를 소개합니다.

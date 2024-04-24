@@ -30,18 +30,10 @@
   background-image: url("../../../public/images/business_img/present.jpg");
   width: 0;
   height: 440px;
-  // background-attachment: fixed;
-  // background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
 }
-
-// .present-text-box {
-//   position: relative;
-//   top: 100px;
-//   opacity: 0;
-// }
 
 .present-title {
   color: #000;
@@ -151,12 +143,6 @@
   background-repeat: no-repeat;
   opacity: 0;
 }
-
-// .monitoring-text-box {
-//   position: relative;
-//   top: 100px;
-//   opacity: 0;
-// }
 
 .monitoring-title {
   color: #000;
@@ -482,4 +468,16 @@
 .research3 {
   width: 1200px;
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus-nav-btn a {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .sub-content {
+    font-size: 3vw;
+  }
 }

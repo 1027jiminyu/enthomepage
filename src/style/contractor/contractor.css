@@ -34,4 +34,30 @@
 
 .logo-box:hover .logo-text {
   top: 0; /* 호버 상태일 때 top 값을 0으로 변경하여 애니메이션을 실행합니다. */
+}
+
+@media screen and (max-width: 1540px) {
+  .logo-box {
+    width: 42vw;
+  }
+  .logo-text {
+    font-size: 18px;
+  }
+  .div-container img {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo-box {
+    height: 140px;
+  }
+  .logo-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .logo-box {
+    width: 80vw;
+    height: 110px;
+  }
 }/*# sourceMappingURL=contractor.css.map */

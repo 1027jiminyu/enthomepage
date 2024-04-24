@@ -1,6 +1,7 @@
 //-----------------------------여기부터 회사소개 이미지 + 텍스트
 //모든 메뉴 통합
 .sub-menu-box {
+  background-image: url("../../../public/images/aboutus_img/aboutusTitle.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,13 +95,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // padding-bottom: 100px;
 }
 
 .mini-line {
   margin: 150px 0 30px 0;
   width: 50px;
   border-bottom: 5px solid #004294;
+}
+
+.about-overview-mini-text {
+  color: #000;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 120px;
 }
 
 .mini-text {
@@ -125,7 +132,7 @@
   flex-direction: column;
   justify-content: center;
   // align-items: center;
-  padding-left: 25%;
+  padding-left: 25vw;
   letter-spacing: -1px;
   opacity: 0;
   position: relative;
@@ -152,38 +159,6 @@
   background-position: center center;
   opacity: 0;
 }
-// .left-box {
-//   width: 70vw;
-//   height: 700px;
-//   background-color: #eff2f9;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   // align-items: center;
-//   padding-left: 25%;
-//   letter-spacing: -1px;
-//   div {
-//     font-size: 40px;
-//     font-weight: 800;
-//     color: #2f3b55;
-//   }
-//   p {
-//     font-size: 25px;
-//     line-height: 50px;
-//     margin: 0;
-//     color: #000;
-//   }
-// }
-
-// .right-box {
-//   position: absolute;
-//   top: 200px;
-//   right: 0;
-//   height: 650px;
-//   width: 44%;
-//   background-position: center center;
-//   // background-size: cover;
-// }
 //-----------------------------여기부터 연혁
 
 .history-box {
@@ -214,6 +189,24 @@
   opacity: 0;
   position: relative;
   top: 100px;
+}
+
+.year-title-other-height1 {
+  height: 200px;
+}
+
+.year-title-other-height2 {
+  height: 580px;
+}
+
+.year-title-other-height3 {
+  height: 630px;
+  border-bottom: 2px solid #004294;
+}
+
+.year-title-other-height4 {
+  height: 630px;
+  border-bottom: 2px solid #ededed;
 }
 
 .year-content {
@@ -282,6 +275,7 @@
   color: #8a8a8a;
   font-size: 16px;
   letter-spacing: -0.8px;
+  text-align: center;
 }
 
 .domain-content {
@@ -324,4 +318,376 @@
   color: #515151;
   font-size: 18px;
   height: 110px;
+}
+
+@media screen and (max-width: 1540px) {
+  .left-box {
+    width: 80vw;
+    height: 500px;
+    padding-left: 18vw;
+    letter-spacing: -1px;
+    div {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 40px;
+      margin: 0;
+    }
+  }
+
+  .right-box {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    height: 400px;
+    width: 42%;
+    background-position: center;
+  }
+
+  .history-left-box {
+    width: 25vw;
+  }
+
+  .history-right-box {
+    width: 65vw;
+  }
+  .history-month {
+    font-size: 16px;
+    line-height: 38px;
+  }
+
+  .history-content {
+    font-size: 16px;
+    line-height: 38px;
+  }
+  .aboutus-content-box img {
+    width: 75vw;
+  }
+  .domain-seperate {
+    padding: 20px 30px;
+  }
+  .domain-title {
+    font-size: 23px;
+  }
+  .domain-subtitle {
+    font-size: 15px;
+  }
+  .domain-box-title {
+    font-size: 19px;
+  }
+  .domain-box-content {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mini-line {
+    border-bottom: 3px solid #004294 !important;
+    margin: 100px 0 30px 0 !important;
+  }
+
+  .about-overview-mini-text,
+  .mini-text {
+    font-size: 36px !important;
+  }
+
+  .left-box {
+    width: 80vw;
+    height: 500px;
+    padding-left: 12vw;
+    letter-spacing: -1px;
+    div {
+      font-size: 28px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 34px;
+    }
+  }
+  .right-box {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    height: 400px;
+    width: 45%;
+    background-position: center;
+  }
+  .overview-content {
+    margin-bottom: 250px;
+  }
+  .year-content {
+    padding: 7px;
+  }
+  //////////////////////////////////////
+  .domain-seperate {
+    padding: 0 15px;
+  }
+  .domain-title {
+    font-size: 3.1vw;
+  }
+  .domain-subtitle {
+    font-size: 1.5vw;
+  }
+  .domain-img-box {
+    width: 30vw;
+  }
+  .domain-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+  .domain-box-title {
+    font-size: 1.76vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .domain-box-content {
+    font-size: 1.39vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus-mini-nav {
+    height: 90px;
+  }
+
+  .aboutus-nav-box {
+    height: 90px;
+    padding: 0 10px;
+  }
+
+  .aboutus-nav-btn {
+    height: 90px;
+    a {
+      font-size: 18px;
+    }
+  }
+
+  .about-overview-mini-text,
+  .mini-text {
+    font-size: 32px !important;
+  }
+
+  .left-box {
+    width: 80vw;
+    height: 420px;
+    padding-left: 8vw;
+    letter-spacing: -1px;
+    div {
+      font-size: 22px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+  .right-box {
+    position: absolute;
+    top: 270px;
+    right: 0;
+    height: 360px;
+    width: 43%;
+    background-position: center;
+  }
+  .overview-content {
+    margin-bottom: 230px;
+  }
+  .year-title {
+    padding-top: 5px;
+    font-size: 22px;
+  }
+  .year-content {
+    padding: 5px;
+  }
+  .history-left-box {
+    width: 25vw;
+    margin-right: 9px;
+  }
+
+  .history-right-box {
+    width: 65vw;
+    margin-left: 9px;
+  }
+  .history-month,
+  .history-content {
+    font-size: 14px;
+    line-height: 33px;
+  }
+  .year-title-other-height1 {
+    height: 170px;
+  }
+  .year-title-other-height2 {
+    height: 520px;
+  }
+  .year-title-other-height3,
+  .year-title-other-height4 {
+    height: 560px;
+  }
+  .faint-year {
+    display: none;
+  }
+  .month-content {
+    margin-bottom: 12px;
+  }
+  .domain-content {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+  }
+  .domain-seperate {
+    width: 97vw;
+    display: flex;
+  }
+  .domain-img-box {
+    width: 38%;
+  }
+  .domain-text-box {
+    padding: 25px 15px;
+    width: 62%;
+  }
+  .domain-box-title {
+    font-size: 3.6vw;
+  }
+  .domain-box-content {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .sub-menu-box {
+    height: 380px;
+    background-image: url("../../../public/images/aboutus_img/aboutusTitle.jpg");
+    background-position: center;
+  }
+
+  .sub-title {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .sub-content {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .aboutus-mini-nav {
+    height: 60px;
+  }
+
+  .aboutus-nav-box {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .aboutus-nav-btn {
+    height: 60px;
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .mini-line {
+    margin: 70px 0 30px 0 !important;
+    width: 30px !important;
+    border-bottom: 3px solid #004294;
+  }
+
+  .about-overview-mini-text,
+  .mini-text {
+    font-size: 25px !important;
+    margin-bottom: 70px !important;
+  }
+
+  .left-box {
+    width: 80vw;
+    height: 400px;
+    padding-left: 20px;
+    letter-spacing: -1px;
+    div {
+      font-size: 20px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 28px;
+    }
+  }
+  .right-box {
+    position: absolute;
+    top: 280px;
+    right: 0;
+    height: 300px;
+    width: 44%;
+    background-position: center;
+  }
+  .year-title {
+    font-size: 18px;
+    border-top: 1px solid #004294;
+  }
+  .dividing-line {
+    width: 1px;
+  }
+  .year-content {
+    border-top: 1px solid #ededed;
+    padding: 0 3px;
+  }
+  .history-left-box {
+    width: 25vw;
+    margin-right: 4px;
+  }
+
+  .history-right-box {
+    width: 65vw;
+    margin-left: 4px;
+  }
+  .history-month,
+  .history-content {
+    font-size: 12px;
+    line-height: 26px;
+  }
+  .year-title-other-height1 {
+    height: 160px;
+  }
+  .year-title-other-height2 {
+    height: 600px;
+  }
+  .year-title-other-height3 {
+    height: 630px;
+    border-bottom: 1px solid #004294;
+  }
+
+  .year-title-other-height4 {
+    height: 630px;
+    border-bottom: 1px solid #ededed;
+  }
+  //////////////////////////////////////
+
+  .domain-title {
+    font-size: 4.3vw;
+    margin-bottom: 13px;
+  }
+  .domain-subtitle {
+    font-size: 2.8vw;
+  }
+  .domain-seperate {
+    width: 100vw;
+  }
+  .domain-img-box {
+    width: 30vw;
+    img {
+      width: 90%;
+    }
+  }
+  .domain-text-box {
+    padding: 25px 8px;
+    width: 70vw;
+  }
+  .domain-box-title {
+    font-size: 4.2vw;
+  }
+  .domain-box-content {
+    font-size: 3vw;
+  }
 }

@@ -95,3 +95,24 @@
   background: white;
   // border: 1px solid transparent;
 }
+
+@media screen and (max-width: 768px) {
+  .mainText {
+    font-size: 9vw;
+  }
+  .subText {
+    font-size: 4vw;
+  }
+  .control-system-btn {
+    width: 180px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .control-system-btn {
+    width: 160px;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}

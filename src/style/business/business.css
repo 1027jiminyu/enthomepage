@@ -455,4 +455,15 @@
 .research3 {
   width: 1200px;
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus-nav-btn a {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 525px) {
+  .sub-content {
+    font-size: 3vw;
+  }
 }/*# sourceMappingURL=business.css.map */

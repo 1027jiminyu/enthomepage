@@ -59,37 +59,39 @@ const DeviceFunc = () => {
         <div className="mini-line" />
         <div className="mini-text">소개 / 기능</div>
       </div>
-      <div className="d-flex justify-content-center">
-        <div className="function-img up up-animation">
-          <img src="/images/device_img/quotationleft.png" />
-          <div>
-            축산악취 모니터링 서비스는{" "}
-            <span style={{ fontWeight: "bold" }}>
-              국립축산과학원, 한국생명공학연구원
-            </span>
-            과 함께
-            <br />
-            공동개발하였으며 각종 정보를 수집하며 악취 기여율을 구축하여
-            <br />
-            새로운 물질 센서 개발을 하였습니다.
+      <div className="d-flex flex-column align-items-center">
+        <div className="d-flex justify-content-center">
+          <div className="function-img up up-animation">
+            <img src="/images/device_img/quotationleft.png" />
+            <div>
+              축산악취 모니터링 서비스는{" "}
+              <span style={{ fontWeight: "bold" }}>
+                국립축산과학원, 한국생명공학연구원
+              </span>
+              과 함께
+              <br />
+              공동개발하였으며 각종 정보를 수집하며 악취 기여율을 구축하여
+              <br />
+              새로운 물질 센서 개발을 하였습니다.
+            </div>
+            <img src="/images/device_img/quotationright.png" />
           </div>
-          <img src="/images/device_img/quotationright.png" />
         </div>
-      </div>
-      <div className="func-dev-box">
-        <div className="device-introfunc up up-animation">장비 소개</div>
-        <div className="func-dev-img">
-          <div className="device_img up up-animation">
-            <img src="/images/device_img/device.jpg" alt="장비 사진" />
-          </div>
-          <div className="device_value_img up-slow up-animation">
-            <img src="/images/device_img/device_value.png" alt="장비 수치" />
+        <div className="func-dev-box">
+          <div className="device-introfunc up up-animation">장비 소개</div>
+          <div className="func-dev-img">
+            <div className="device_img up up-animation">
+              <img src="/images/device_img/device.jpg" alt="장비 사진" />
+            </div>
+            <div className="device_value_img up-slow up-animation">
+              <img src="/images/device_img/device_value.png" alt="장비 수치" />
+            </div>
           </div>
         </div>
       </div>
       <div className="function-box">
         <div className="device-introfunc up up-animation">장비 기능</div>
-        <div className="function-content">
+        <div className="function-content d-flex flex-column align-items-center">
           <div
             className="function-text up-slow2 up-animation"
             style={{ marginTop: 0 }}

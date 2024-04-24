@@ -174,9 +174,18 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.93);
-  z-index: 10;
+  background-color: #000;
   overflow: hidden;
+}
+
+.overlay-bg {
+  background-image: url("../../../public/images/logo_img/black-overlay-logo.png");
+  width: 691px;
+  height: 209px;
+  position: fixed;
+  bottom: 0; /* 필요에 따라 조정 */
+  right: 0; /* 필요에 따라 조정 */
+  z-index: -1;
 }
 
 .nav-box {
@@ -198,13 +207,9 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   background-color: #005aca; /* 초기 상태의 색상 */
   transition: width 0.5s, background-color 0.5s; /* 너비와 색상에 대한 전환 설정 */
-}
-
-.box:hover .nav-list a:hover::after {
-  background-color: #005aca; /* 호버 시에 변경될 색상 */
 }
 
 .nav-list {
@@ -223,7 +228,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   background-color: #3a3a3a;
 }
 
@@ -240,4 +245,55 @@
 
 .nav-sublist div:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .header-box {
+    padding: 0 30px;
+  }
+  .main-menu {
+    display: none;
+  }
+  .overlay-bg {
+    background-image: url("../../../public/images/logo_img/black-overlay-mobile.png");
+    width: 306px;
+    height: 93px;
+    z-index: -1;
+  }
+  .mobile-nav-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 10vw;
+  }
+  .mobile-nav-list {
+    color: #fff;
+    font-size: 27px;
+    line-height: 70px;
+    font-weight: 800;
+  }
+  .mobile-nav-sublist {
+    color: #797979;
+    font-size: 18px;
+    line-height: 50px;
+  }
+  .active-line {
+    width: 120px;
+    height: 2px;
+    background-color: #005aca;
+    margin: 7px 0;
+  }
+  .footer-box {
+    height: 250px;
+    padding: 0 22px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .footer-box {
+    height: 330px;
+  }
+  .footer-content {
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=headerFooter.css.map */

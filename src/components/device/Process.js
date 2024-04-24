@@ -98,7 +98,50 @@ const Process = () => {
       <div className="process-box">
         <div className="process-text up up-animation">장비 프로세스</div>
         <div className="process-img-box">
-          <div className="equipment fastAppear">
+          <img
+            className="equipment fastAppear"
+            src="/images/device_img/device_process/equipment.jpg"
+          />
+          <div className="appearProcess">
+            <img
+              className="arrow1"
+              src="/images/device_img/device_process/arrow1.png"
+            />
+            <img
+              className="farm"
+              src="/images/device_img/device_process/farm.png"
+            />
+          </div>
+          <img
+            className="gateway appearProcess"
+            src="/images/device_img/device_process/gateway.png"
+          />
+          <img
+            className="cloud appearProcess"
+            src="/images/device_img/device_process/cloud.jpg"
+          />
+          <img
+            className="arrow2 appearProcess"
+            src="/images/device_img/device_process/arrow2.png"
+          />
+          <img
+            className="arrow3 appearProcess"
+            src="/images/device_img/device_process/arrow3.png"
+          />
+          <img
+            className="moni appearProcess"
+            src="/images/device_img/device_process/moni.jpg"
+          />
+          <img
+            className="arrow4 appearProcess"
+            src="/images/device_img/device_process/arrow2.png"
+          />
+          <img
+            className="manager appearProcess"
+            src="/images/device_img/device_process/manager.jpg"
+          />
+
+          {/* <div className="equipment fastAppear">
             <img src="/images/device_img/device_process/equipment.jpg" />
           </div>
           <div className="appearProcess">
@@ -129,12 +172,12 @@ const Process = () => {
           </div>
           <div className="manager appearProcess">
             <img src="/images/device_img/device_process/manager.jpg" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="sequence-box">
         <div className="sequence-text up up-animation">장비 동작순서</div>
-        <div>
+        <div className="d-flex flex-column justify-content-center align-items-center">
           <div className="sequence1 up up-animation">
             <div>초기 부팅 구간</div>
             <div>Sensor Data 전송 구간</div>

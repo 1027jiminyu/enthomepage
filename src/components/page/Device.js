@@ -41,14 +41,6 @@ const Product = () => {
           >
             <a>프로세스 / 동작순서</a>
           </li>
-          {/* <li
-            className={`aboutus-nav-btn `}
-            onClick={() => {
-              navigate("/device/sequence");
-            }}
-          >
-            <a>동작순서</a>
-          </li> */}
           <li
             className={`aboutus-nav-btn `}
             onClick={() => {

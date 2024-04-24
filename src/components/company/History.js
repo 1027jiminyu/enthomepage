@@ -31,28 +31,14 @@ export default function History() {
       </div>
       <div className="history-box d-flex justify-content-center">
         <div className="history-left-box">
-          <div className="year-title year" style={{ height: "200px" }}>
-            2023
-          </div>
-          <div className="year-title year" style={{ height: "200px" }}>
-            2022
-          </div>
-          <div className="year-title year" style={{ height: "580px" }}>
-            2021
-          </div>
-          <div
-            className="year-title year"
-            style={{
-              height: "630px",
-              borderBottom: "2px solid #004294",
-            }}
-          >
-            2020
-          </div>
+          <div className="year-title year year-title-other-height1">2023</div>
+          <div className="year-title year year-title-other-height1">2022</div>
+          <div className="year-title year year-title-other-height2">2021</div>
+          <div className="year-title year year-title-other-height3">2020</div>
         </div>
         <div className="dividing-line" />
         <div className="history-right-box">
-          <div className="year-content year" style={{ height: "200px" }}>
+          <div className="year-content year year-title-other-height1">
             <div>
               <div className="month-content">
                 <div className="history-month">06</div>
@@ -63,7 +49,7 @@ export default function History() {
             </div>
             <div className="faint-year">2023</div>
           </div>
-          <div className="year-content year" style={{ height: "200px" }}>
+          <div className="year-content year year-title-other-height1">
             <div>
               <div className="month-content">
                 <div className="history-month">12</div>
@@ -81,7 +67,7 @@ export default function History() {
             </div>
             <div className="faint-year">2022</div>
           </div>
-          <div className="year-content year" style={{ height: "580px" }}>
+          <div className="year-content year year-title-other-height2">
             <div>
               <div className="month-content">
                 <div className="history-month">10</div>
@@ -121,13 +107,7 @@ export default function History() {
             </div>
             <div className="faint-year">2021</div>
           </div>
-          <div
-            className="year-content year"
-            style={{
-              height: "630px",
-              borderBottom: "2px solid #ededed",
-            }}
-          >
+          <div className="year-content year year-title-other-height4">
             <div>
               <div className="month-content">
                 <div className="history-month">09</div>
