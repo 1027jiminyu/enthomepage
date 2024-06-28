@@ -569,67 +569,67 @@
   }
   .process-img-box {
     width: 80vw;
-    height: 57vw;
+    height: 73vw;
   }
   .arrow1 {
     position: absolute;
-    top: 12.5vw;
+    top: 16vw;
     left: 4vw;
-    width: 2.2vw;
+    width: 3vw;
   }
   .equipment {
     position: absolute;
     top: 3.1vw;
-    left: 7.45vw;
-    width: 33.5vw;
+    left: 8.5vw;
+    width: 45vw;
   }
   .farm {
     position: absolute;
-    top: 27.4vw;
-    left: 7.3vw;
-    width: 20.2vw;
+    top: 37vw;
+    left: 8.8vw;
+    width: 25vw;
   }
   .gateway {
     position: absolute;
     top: 3.3vw;
-    left: 42.4vw;
-    width: 10.2vw;
+    left: 56vw;
+    width: 13.5vw;
   }
   .cloud {
     position: absolute;
-    top: 12.4vw;
-    left: 43.3vw;
-    width: 10.2vw;
+    top: 15.5vw;
+    left: 57vw;
+    width: 13.5vw;
   }
   .arrow2 {
     position: absolute;
-    top: 21.5vw;
-    left: 48vw;
-    width: 0.8vw;
+    top: 27vw;
+    left: 63vw;
+    width: 1.2vw;
   }
   .arrow3 {
     position: absolute;
-    top: 32.1vw;
-    left: 29vw;
-    width: 4.5vw;
+    top: 41vw;
+    left: 35vw;
+    width: 6.5vw;
   }
   .moni {
     position: absolute;
-    top: 27.5vw;
-    left: 34.75vw;
-    width: 23.5vw;
+    top: 35.5vw;
+    left: 43vw;
+    width: 31vw;
   }
   .arrow4 {
     position: absolute;
-    top: 38vw;
-    left: 46.2vw;
-    width: 0.8vw;
+    top: 48.5vw;
+    left: 58vw;
+    width: 1.2vw;
   }
   .manager {
     position: absolute;
-    top: 44vw;
-    left: 34.75vw;
-    width: 23.5vw;
+    top: 57vw;
+    left: 43vw;
+    width: 31vw;
   }
   .sequence-box {
     padding: 10vw 0;
@@ -867,10 +867,10 @@
   .function-img img {
     width: 2.1vw;
     top: -5vw;
-    margin: 0 4.5vw;
+    margin: 0 3.5vw;
   }
   .function-img div {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .device-introfunc {
     font-size: 2.1vw;
@@ -890,10 +890,10 @@
   .process-img img {
     width: 2.1vw;
     top: -5vw;
-    margin: 0 4.5vw;
+    margin: 0 3.5vw;
   }
   .process-img div {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
   .led-img {
     width: 80vw;
@@ -905,10 +905,10 @@
   .led-img img {
     width: 2.1vw;
     top: -5vw;
-    margin: 0 4.5vw;
+    margin: 0 3.5vw;
   }
   .led-img div {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 525px) {

@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useMediaQuery } from "react-responsive";
 
 export default function Work() {
-  const is768 = useMediaQuery({ maxWidth: 768 });
+  const is767 = useMediaQuery({ maxWidth: 767 });
   useEffect(() => {
     const domains = gsap.utils.toArray(".domain");
     domains.forEach((domain) => {
@@ -55,7 +55,7 @@ export default function Work() {
             </div>
           </div>
           <div
-            className={`domain-seperate ${is768 ? "" : "seperate-second-box"}`}
+            className={`domain-seperate ${is767 ? "" : "seperate-second-box"}`}
           >
             <div className="domain-img-box">
               <img src="/images/aboutus_img/icon2.png" />

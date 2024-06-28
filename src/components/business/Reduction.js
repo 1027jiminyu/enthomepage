@@ -65,8 +65,8 @@ const Reduction = () => {
   return (
     <div className="d-flex flex-column align-items-center">
       <div className="business-content-box">
-        <div className="mini-line" />
-        <div className="mini-text">저감 시스템 개발</div>
+        <div className="business-mini-line" />
+        <div className="business-mini-text">저감 시스템 개발</div>
       </div>
       <div className="reduction-box">
         <div className="reduction-img" ref={verticalLineRef} />
@@ -77,7 +77,7 @@ const Reduction = () => {
           저감 시스템 개발
         </div>
         <div className="reduction-text up-slow">
-          <span style={{ fontSize: "20px" }}>· 1단계 사업 방향</span>
+          <span>· 1단계 사업 방향</span>
           <br />
           &ensp;&ensp;축산 바이오커튼 및 악취저감시설 개발
           <br />
@@ -91,10 +91,16 @@ const Reduction = () => {
       <div className="reduction2">
         <div className="reduction2-img">
           <div className="up up-animation">
-            <img src="/images/business_img/reduction_process.png" />
+            <img
+              src="/images/business_img/reduction_process.png"
+              className="reduction-left-img"
+            />
           </div>
           <div className="up up-animation">
-            <img src="/images/business_img/reduction_site.jpg" />
+            <img
+              src="/images/business_img/reduction_site.jpg"
+              className="reduction-right-img"
+            />
           </div>
         </div>
         <div className="d-flex flex-column align-items-center up up-animation">

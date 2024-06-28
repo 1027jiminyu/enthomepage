@@ -3,8 +3,10 @@ import "../../style/headerFooter/headerFooter.css";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineMenu, MdClose } from "react-icons/md";
 import WideNav from "./WideNav";
+import { useMediaQuery } from "react-responsive";
 
 function Header() {
+  const is991 = useMediaQuery({ maxWidth: 991 });
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,6 +24,10 @@ function Header() {
 
     window.addEventListener("scroll", handleScroll);
 
+    if (is991) {
+      setIsHovered(false);
+    }
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -30,13 +36,17 @@ function Header() {
   return (
     <div
       className={`header-box ${isScrolled ? "scroll-on" : ""} ${
-        isHovered ? "whiteBackground" : ""
+        isHovered && !is991 ? "whiteBackground" : ""
       }`}
     >
       <div onClick={() => navigate("/")} className="headerLogo">
         {isHovered || isScrolled ? (
           <div className="menu-line">
             <img src="/images/logo_img/ent-logo.png" alt="이엔티" />
+          </div>
+        ) : is991 ? (
+          <div>
+            <img src="/images/logo_img/ent-logo-clear.png" alt="이엔티" />
           </div>
         ) : (
           <div>
@@ -186,7 +196,9 @@ function Header() {
           <MdClose color="#fff" size={35} />
         ) : (
           <MdOutlineMenu
-            color={`${isHovered || isScrolled ? "#000" : "#fff"}`}
+            color={`${
+              isHovered || isScrolled ? "#000" : is991 ? "#fff" : "#fff"
+            }`}
             size={35}
           />
         )}

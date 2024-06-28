@@ -45,7 +45,7 @@ export default function Overview() {
   return (
     <div>
       <div className="aboutus-content-box">
-        <div className="mini-line" />
+        <div className="aboutus-mini-line" />
         <div className="about-overview-mini-text">About Company</div>
       </div>
       <div className="overview-content">

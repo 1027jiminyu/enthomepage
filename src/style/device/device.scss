@@ -134,10 +134,8 @@
 
 .process-img-box {
   border: 3px solid #e3e3e3;
-  // width: 62.5vw;
   width: 1200px;
   height: 1080px;
-  // height: 57vw;
   position: relative;
 }
 
@@ -145,94 +143,51 @@
   position: absolute;
   top: 241px;
   left: 77px;
-  // top: 12.5vw;
-  // left: 4vw;
-  // width: 2.2vw;
 }
 .equipment {
   position: absolute;
   top: 60px;
   left: 143px;
-  // top: 3.1vw;
-  // left: 7.45vw;
-  // width: 33.5vw;
 }
 .farm {
   position: absolute;
   top: 526px;
   left: 140px;
-  // top: 27.4vw;
-  // left: 7.3vw;
-  // width: 20.2vw;
 }
 .gateway {
   position: absolute;
   top: 63px;
-  // right: 191px;
   left: 814px;
-  // top: 3.3vw;
-  // right: 9.1vw;
-  // top: 3.3vw;
-  // left: 42.4vw;
-  // width: 10.2vw;
 }
 .cloud {
   position: absolute;
   top: 238px;
-  // right: 173px;
   left: 831px;
-  // top: 12.4vw;
-  // right: 9vw;
-  // left: 43.3vw;
-  // width: 10.2vw;
 }
 .arrow2 {
   position: absolute;
   top: 411px;
-  // right: 263px;
   left: 922px;
-  // top: 21.5vw;
-  // right: 13.7vw;
-  // left: 48vw;
-  // width: 0.8vw;
 }
 .arrow3 {
   position: absolute;
   top: 615px;
   left: 558px;
-  // top: 32.1vw;
-  // left: 29vw;
-  // width: 4.5vw;
 }
 .moni {
   position: absolute;
   top: 526px;
-  // right: 77px;
-  // top: 27.5vw;
-  // right: 4vw;
   left: 667px;
-  // left: 34.75vw;
-  // width: 23.5vw;
 }
 .arrow4 {
   position: absolute;
   top: 728px;
-  // right: 297px;
-  // top: 38vw;
-  // right: 15.5vw;
   left: 888px;
-  // left: 46.2vw;
-  // width: 0.8vw;
 }
 .manager {
   position: absolute;
   top: 841px;
-  // right: 77px;
-  // top: 44vw;
-  // right: 4vw;
   left: 667px;
-  // left: 34.75vw;
-  // width: 23.5vw;
 }
 
 .sequence-box {
@@ -482,7 +437,6 @@
 .bad-box {
   display: flex;
   margin-bottom: 125px;
-  // background-color: #567eb4;
   img {
     width: 745px;
   }
@@ -491,7 +445,6 @@
 .normal-box {
   display: flex;
   margin-bottom: 125px;
-  // background-color: #567eb4;
   img {
     width: 745px;
   }
@@ -500,7 +453,6 @@
 .good-box {
   display: flex;
   margin-bottom: 125px;
-  // background-color: #567eb4;
   img {
     width: 745px;
   }
@@ -508,7 +460,6 @@
 
 .verygood-box {
   display: flex;
-  // background-color: #567eb4;
   img {
     width: 745px;
   }
@@ -619,8 +570,6 @@
 
   .process-box {
     padding: 10vw 0;
-    // display: flex;
-    // justify-content: center;
   }
 
   .process-text {
@@ -631,175 +580,68 @@
 
   .process-img-box {
     width: 80vw;
-    height: 57vw;
+    height: 73vw;
   }
-
-  //////////////////////////////24-04-19 프로세스 사진, 위치 조절부터
-
-  // .arrow1 {
-  //   position: absolute;
-  //   top: 241px;
-  //   left: 77px;
-  //   // top: 12.5vw;
-  //   // left: 4vw;
-  // }
-  // .equipment {
-  //   position: absolute;
-  //   top: 60px;
-  //   left: 143px;
-  //   // top: 3.1vw;
-  //   // left: 7.45vw;
-  // }
-  // .farm {
-  //   position: absolute;
-  //   top: 526px;
-  //   left: 140px;
-  //   // top: 27.4vw;
-  //   // left: 7.3vw;
-  // }
-  // .gateway {
-  //   position: absolute;
-  //   top: 63px;
-  //   right: 191px;
-  //   // top: 3.3vw;
-  //   // right: 9.1vw;
-  // }
-  // .cloud {
-  //   position: absolute;
-  //   top: 238px;
-  //   right: 173px;
-  //   // top: 12.4vw;
-  //   // right: 9vw;
-  // }
-  // .arrow2 {
-  //   position: absolute;
-  //   top: 411px;
-  //   right: 263px;
-  //   // top: 21.5vw;
-  //   // right: 13.7vw;
-  // }
-  // .arrow3 {
-  //   position: absolute;
-  //   left: 558px;
-  //   top: 615px;
-  //   // left: 29vw;
-  //   // top: 32.1vw;
-  // }
-  // .moni {
-  //   position: absolute;
-  //   top: 526px;
-  //   right: 77px;
-  //   // top: 27.5vw;
-  //   // right: 4vw;
-  // }
-  // .arrow4 {
-  //   position: absolute;
-  //   top: 728px;
-  //   right: 297px;
-  //   // top: 38vw;
-  //   // right: 15.5vw;
-  // }
-  // .manager {
-  //   position: absolute;
-  //   top: 841px;
-  //   right: 77px;
-  //   // top: 44vw;
-  //   // right: 4vw;
-  // }
 
   .arrow1 {
     position: absolute;
-    // top: 241px;
-    // left: 77px;
-    top: 12.5vw;
+    top: 16vw;
     left: 4vw;
-    width: 2.2vw;
+    width: 3vw;
   }
   .equipment {
     position: absolute;
-    // top: 60px;
-    // left: 143px;
     top: 3.1vw;
-    left: 7.45vw;
-    width: 33.5vw;
-    // height: 5vw;
+    left: 8.5vw;
+    width: 45vw;
   }
   .farm {
     position: absolute;
-    // top: 526px;
-    // left: 140px;
-    top: 27.4vw;
-    left: 7.3vw;
-    width: 20.2vw;
+    top: 37vw;
+    left: 8.8vw;
+    width: 25vw;
   }
   .gateway {
     position: absolute;
-    // top: 63px;
-    // right: 191px;
-    // left: 814px;
-    // top: 3.3vw;
-    // right: 9.1vw;
     top: 3.3vw;
-    left: 42.4vw;
-    width: 10.2vw;
+    left: 56vw;
+    width: 13.5vw;
   }
   .cloud {
     position: absolute;
-    // top: 238px;
-    // right: 173px;
-    // left: 831px;
-    top: 12.4vw;
-    // right: 9vw;
-    left: 43.3vw;
-    width: 10.2vw;
+    top: 15.5vw;
+    left: 57vw;
+    width: 13.5vw;
   }
   .arrow2 {
     position: absolute;
-    // top: 411px;
-    // right: 263px;
-    // left: 922px;
-    top: 21.5vw;
-    // right: 13.7vw;
-    left: 48vw;
-    width: 0.8vw;
+    top: 27vw;
+    left: 63vw;
+    width: 1.2vw;
   }
   .arrow3 {
     position: absolute;
-    // top: 615px;
-    // left: 558px;
-    top: 32.1vw;
-    left: 29vw;
-    width: 4.5vw;
+    top: 41vw;
+    left: 35vw;
+    width: 6.5vw;
   }
   .moni {
     position: absolute;
-    // top: 526px;
-    // right: 77px;
-    top: 27.5vw;
-    // right: 4vw;
-    // left: 667px;
-    left: 34.75vw;
-    width: 23.5vw;
+    top: 35.5vw;
+    left: 43vw;
+    width: 31vw;
   }
   .arrow4 {
     position: absolute;
-    // top: 728px;
-    // right: 297px;
-    top: 38vw;
-    // right: 15.5vw;
-    // left: 888px;
-    left: 46.2vw;
-    width: 0.8vw;
+    top: 48.5vw;
+    left: 58vw;
+    width: 1.2vw;
   }
   .manager {
     position: absolute;
-    // top: 841px;
-    // right: 77px;
-    top: 44vw;
-    // right: 4vw;
-    // left: 667px;
-    left: 34.75vw;
-    width: 23.5vw;
+    top: 57vw;
+    left: 43vw;
+    width: 31vw;
   }
   /////////////////////////////////////////////////////
   .sequence-box {
@@ -1065,10 +907,10 @@
     img {
       width: 2.1vw;
       top: -5vw;
-      margin: 0 4.5vw;
+      margin: 0 3.5vw;
     }
     div {
-      font-size: 1.8vw;
+      font-size: 2vw;
     }
   }
 
@@ -1092,10 +934,10 @@
     img {
       width: 2.1vw;
       top: -5vw;
-      margin: 0 4.5vw;
+      margin: 0 3.5vw;
     }
     div {
-      font-size: 1.8vw;
+      font-size: 2vw;
     }
   }
 
@@ -1109,10 +951,10 @@
     img {
       width: 2.1vw;
       top: -5vw;
-      margin: 0 4.5vw;
+      margin: 0 3.5vw;
     }
     div {
-      font-size: 1.8vw;
+      font-size: 2vw;
     }
   }
 }

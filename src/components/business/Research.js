@@ -1,8 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useMediaQuery } from "react-responsive";
 
 const Research = () => {
+  const is1467 = useMediaQuery({ maxWidth: 1467 });
   const verticalLineRef = useRef(null);
 
   useEffect(() => {
@@ -73,7 +75,7 @@ const Research = () => {
 
       ScrollTrigger.create({
         trigger: uptoslow,
-        start: "top 50%",
+        start: "top 75%",
         onEnter: () => anim.play(),
       });
     });
@@ -94,8 +96,8 @@ const Research = () => {
   return (
     <div className="d-flex flex-column align-items-center">
       <div className="business-content-box">
-        <div className="mini-line" />
-        <div className="mini-text">연구 개발 및 설치</div>
+        <div className="business-mini-line" />
+        <div className="business-mini-text">연구 개발 및 설치</div>
       </div>
       <div className="research-box">
         <div className="research-img" ref={verticalLineRef} />
@@ -103,7 +105,7 @@ const Research = () => {
         <div className="research-title up">
           연구 개발 및 설치 자료
           <br />
-          <span style={{ fontSize: "48px" }}>(양돈, 낙농, 양계, 오리)</span>
+          <span>(양돈, 낙농, 양계, 오리)</span>
         </div>
         <div className="research-text up-slow">
           · 양돈, 낙농, 양계, 오리 등 농가 방문 사례
@@ -113,7 +115,10 @@ const Research = () => {
       <div className="research2">
         <div className="photo-text up-slow">양돈, 낙농 사례</div>
         <div className="photo-box up up-animation">
-          <div className="research-photo" style={{ marginBottom: "12px" }}>
+          <div
+            className="research-photo"
+            style={{ marginBottom: is1467 ? "1.1vw" : "12px" }}
+          >
             {[1, 2, 3].map((index) => (
               <div
                 key={index}
@@ -132,9 +137,7 @@ const Research = () => {
                 />
               </div>
             ))}
-            <div
-              style={{ width: "290px", height: "290px", marginRight: "13px" }}
-            />
+            <div className="blank-box" />
           </div>
           <div className="research-photo">
             {[4, 5, 6, 7].map((index) => (
@@ -163,7 +166,10 @@ const Research = () => {
       <div className="research3">
         <div className="photo-text up-slow">양계, 오리 사례</div>
         <div className="photo-box up-to-slow up-animation">
-          <div className="research-photo" style={{ marginBottom: "12px" }}>
+          <div
+            className="research-photo"
+            style={{ marginBottom: is1467 ? "1.1vw" : "12px" }}
+          >
             {[8, 9, 10, 11].map((index) => (
               <div
                 key={index}

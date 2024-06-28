@@ -67,8 +67,8 @@ const Monitoring = () => {
     <>
       <div className="d-flex flex-column align-items-center">
         <div className="business-content-box">
-          <div className="mini-line" />
-          <div className="mini-text">모니터링 개요</div>
+          <div className="business-mini-line" />
+          <div className="business-mini-text">모니터링 개요</div>
         </div>
         <div className="monitoring-box">
           <div className="monitoring-img" ref={verticalLineRef} />
@@ -82,8 +82,11 @@ const Monitoring = () => {
           {/* </div> */}
         </div>
         <div className="monitoring1-box">
-          <div className="up up-animation">
-            <img src="/images/business_img/monitoring1.jpg" />
+          <div className="up up-animation d-flex justify-content-center">
+            <img
+              src="/images/business_img/monitoring1.jpg"
+              className="monitoring-content1-img"
+            />
           </div>
           <div className="cause-matter">
             <div className="cause-matter-left ">
@@ -106,16 +109,19 @@ const Monitoring = () => {
         <div className="monitoring2-box up up-animation">
           <img
             src="/images/business_img/monitoring2.png"
-            style={{ width: "1200px" }}
+            className="monitoring-content2-img"
           />
         </div>
       </div>
       <div className="monitoring3-box">
-        <div className="up up-animation" style={{ marginBottom: "50px" }}>
+        <div className="up up-animation monitoring3-title">
           축산 냄새 원인 물질 측정 모니터링 개요(S/W)
         </div>
         <div className="monitoring-overview-box up-slow up-animation">
-          <img src="/images/business_img/monitoring3.png" />
+          <img
+            src="/images/business_img/monitoring3.png"
+            className="monitoring-content3-img"
+          />
         </div>
       </div>
     </>

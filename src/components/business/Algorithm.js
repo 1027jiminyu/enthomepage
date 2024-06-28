@@ -65,8 +65,8 @@ const Algorithm = () => {
   return (
     <div className="d-flex flex-column align-items-center">
       <div className="business-content-box">
-        <div className="mini-line" />
-        <div className="mini-text">알고리즘 개발</div>
+        <div className="business-mini-line" />
+        <div className="business-mini-text">알고리즘 개발</div>
       </div>
       <div className="algorithm-box">
         <div className="algorithm-img" ref={verticalLineRef} />

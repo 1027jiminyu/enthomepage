@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 const Contractor = () => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
-  const isMobile = useMediaQuery({ maxWidth: 525 });
+  const isMobile = useMediaQuery({ maxWidth: 524 });
   return (
     <div>
       <div>

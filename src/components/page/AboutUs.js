@@ -21,7 +21,7 @@ export default function AboutUs() {
       >
         <ul className="aboutus-nav-box">
           <li
-            className={`aboutus-nav-btn `}
+            className={`aboutus-nav-btn`}
             onClick={() => {
               navigate("/about-us/overview");
             }}
@@ -29,7 +29,7 @@ export default function AboutUs() {
             <a>회사 개요</a>
           </li>
           <li
-            className={`aboutus-nav-btn `}
+            className={`aboutus-nav-btn`}
             onClick={() => {
               navigate("/about-us/history");
             }}
@@ -37,7 +37,7 @@ export default function AboutUs() {
             <a>주요 연혁</a>
           </li>
           <li
-            className={`aboutus-nav-btn `}
+            className={`aboutus-nav-btn`}
             onClick={() => {
               navigate("/about-us/organization");
             }}
@@ -45,7 +45,7 @@ export default function AboutUs() {
             <a>기구 조직도</a>
           </li>
           <li
-            className={`aboutus-nav-btn `}
+            className={`aboutus-nav-btn`}
             onClick={() => {
               navigate("/about-us/domain");
             }}

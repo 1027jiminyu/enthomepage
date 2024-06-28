@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 
 const Footer = () => {
   const isMobile = useMediaQuery({ maxWidth: 991 });
-  const theSmaller = useMediaQuery({ maxWidth: 525 });
+  const theSmaller = useMediaQuery({ maxWidth: 524 });
 
   const privacy = () => {
     // setIsActive(true);

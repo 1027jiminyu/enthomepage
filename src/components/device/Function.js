@@ -48,7 +48,7 @@ const DeviceFunc = () => {
 
       ScrollTrigger.create({
         trigger: upslow2,
-        start: "top 75%",
+        start: "top 80%",
         onEnter: () => anim.play(),
       });
     });

@@ -6,6 +6,7 @@ const Process = () => {
   useEffect(() => {
     const ups = gsap.utils.toArray(".up");
     const upslow = gsap.utils.toArray(".up-slow");
+    const ups2 = gsap.utils.toArray(".up2");
 
     ups.forEach((up) => {
       const anim = gsap.to(up, {
@@ -18,6 +19,21 @@ const Process = () => {
       ScrollTrigger.create({
         trigger: up,
         start: "center 85%",
+        onEnter: () => anim.play(),
+      });
+    });
+
+    ups2.forEach((up2) => {
+      const anim = gsap.to(up2, {
+        y: -100,
+        paused: true,
+        opacity: 1,
+        duration: 1,
+      });
+
+      ScrollTrigger.create({
+        trigger: up2,
+        start: "center 95%",
         onEnter: () => anim.play(),
       });
     });
@@ -220,7 +236,7 @@ const Process = () => {
             <div>센서 세척</div>
             <div>휴식 시간</div>
           </div>
-          <div className="sequence-bottom-text d-flex justify-content-center up up-animation">
+          <div className="sequence-bottom-text d-flex justify-content-center up2 up-animation">
             * 측정 기간은 사용자 또는 관리자가 원하는 시간으로 설정 가능합니다.
           </div>
         </div>

@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useMediaQuery } from "react-responsive";
 
 const Vision = () => {
+  const is1467 = useMediaQuery({ maxWidth: 1467 });
   const verticalLineRef = useRef(null);
 
   useEffect(() => {
@@ -19,8 +21,11 @@ const Vision = () => {
         onEnter: () => tl.play(), // 스크롤 위치에 따라 애니메이션을 재생
       },
     });
-
+    // if (is1467) {
+    // tl.to(verticalLine, { width: "80vw", opacity: "1" }); // 애니메이션 정의
+    // } else {
     tl.to(verticalLine, { width: "1200px", opacity: "1" }); // 애니메이션 정의
+    // }
 
     // unmount시 애니메이션을 제거하여 메모리 누수 방지
     return () => {
@@ -98,8 +103,8 @@ const Vision = () => {
   return (
     <div className="d-flex flex-column align-items-center">
       <div className="business-content-box">
-        <div className="mini-line" />
-        <div className="mini-text">사업 및 개발 방향</div>
+        <div className="business-mini-line" />
+        <div className="business-mini-text">사업 및 개발 방향</div>
       </div>
       <div className="present-box">
         <div className="present-img" ref={verticalLineRef} />
@@ -114,7 +119,11 @@ const Vision = () => {
       </div>
       <div className="present-line" />
       <div className="vision-box">
-        <div className="vision-img up-fast" />
+        {/* <div className="vision-img up-fast" /> */}
+        <img
+          className="vision-img up-fast"
+          src="/images/business_img/vision.jpg"
+        />
         <div className="vision-text-box">
           <div className="vision-title up-slow">신규 기술 개발 방향</div>
           <div>
